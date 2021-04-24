@@ -1,6 +1,3 @@
-import Logo from "../Logo";
-import InputSearch from "../InputSearch";
-
 import Styles from "./styles";
 
 const Avatar = () => (
