@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Theme from "../../styles/Theme";
 
 const Avatar = styled.div`
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
@@ -11,19 +11,19 @@ const Avatar = styled.div`
   position: relative;
 
   &:hover::after {
-    box-shadow: inset 0px 0px 0 2px #000000;
+    box-shadow: inset 0px 0px 0 2px ${Theme.colors.primary};
     content: "";
     display: block;
     position: absolute;
     top: 0;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
   }
 
   img {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 1;
