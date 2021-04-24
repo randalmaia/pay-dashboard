@@ -13,7 +13,7 @@ const Home = () => (
       />
     </Head>
 
-    <Layout>Randsl</Layout>
+    <Layout>Dashboard</Layout>
   </div>
 );
 
