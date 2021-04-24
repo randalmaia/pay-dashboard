@@ -9,7 +9,7 @@ const Layout = ({ children }: LayoutProps) => (
     <GlobalStyle></GlobalStyle>
     <Header></Header>
     <Navbar></Navbar>
-    <main>{children}</main>
+    <Styles.Main>{children}</Styles.Main>
   </Styles.Layout>
 );
 

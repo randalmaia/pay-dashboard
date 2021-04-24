@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Theme from "../../styles/Theme";
 
 const LanguageSelector = styled.div`
   cursor: pointer;

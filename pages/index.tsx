@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import Dashboard from "../components/Dashboard";
 
 const Home = () => (
   <div>
@@ -13,7 +14,9 @@ const Home = () => (
       />
     </Head>
 
-    <Layout>Dashboard</Layout>
+    <Layout>
+      <Dashboard />
+    </Layout>
   </div>
 );
 
