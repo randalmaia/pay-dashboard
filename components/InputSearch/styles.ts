@@ -6,22 +6,27 @@ const Wrapper = styled.div`
 `;
 
 const Icon = styled.div`
+  display: none;
   position: absolute;
   top: 16px;
   left: 18px;
   z-index: 1;
   color: #959595;
-  transition: 0.3s;
+  transition: 0.1s;
+
+  @media (min-width: 801px) {
+    display: block;
+  }
 `;
 
 const Input = styled.input`
+  display: none;
   padding: 14px 14px 14px 48px;
   border: 2px solid ${Theme.colors.background};
   border-radius: 32px;
   outline: none;
   transition: 0.3s;
   width: 264px;
-  display: block;
   position: relative;
   top: 0;
   left: 0;
@@ -37,6 +42,10 @@ const Input = styled.input`
 
   &:focus + ${Icon} {
     color: ${Theme.colors.primary};
+  }
+
+  @media (min-width: 801px) {
+    display: block;
   }
 `;
 
