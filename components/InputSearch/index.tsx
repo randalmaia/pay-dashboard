@@ -4,9 +4,9 @@ import Styles from "./styles";
 const InputSearch = () => (
   <Styles.Wrapper>
     <Styles.Input placeholder="Search" />
-    <Styles.Icon>
+    <Styles.InputIcon>
       <FaSearch size={16} />
-    </Styles.Icon>
+    </Styles.InputIcon>
   </Styles.Wrapper>
 );
 

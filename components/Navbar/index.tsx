@@ -13,7 +13,7 @@ import {
   BsEnvelopeFill,
   BsChat,
   BsChatFill,
-  BsList,
+  BsSearch,
 } from "react-icons/bs";
 
 const Navbar = () => {
@@ -33,6 +33,13 @@ const Navbar = () => {
       </Styles.HambuguerMenu>
 
       <Styles.Menu open={open}>
+        <Styles.SearchItem>
+          <Styles.MenuItem>
+            <BsSearch size={30} />
+            <BsSearch size={30} />
+            <Styles.MenuItemDescription>Search</Styles.MenuItemDescription>
+          </Styles.MenuItem>
+        </Styles.SearchItem>
         <Styles.MenuItem>
           <BsHouseDoorFill size={30} />
           <BsHouseDoorFill size={30} />

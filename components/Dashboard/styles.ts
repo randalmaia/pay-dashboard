@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Theme from "../../styles/Theme";
 
 const Dashboard = styled.div`
   box-sizing: border-box;

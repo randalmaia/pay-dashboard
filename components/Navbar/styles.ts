@@ -84,4 +84,17 @@ const MenuItemDescription = styled.div`
   }
 `;
 
-export default { Nav, HambuguerMenu, Menu, MenuItem, MenuItemDescription };
+const SearchItem = styled.div`
+  @media (min-width: 801px) {
+    display: none;
+  }
+`;
+
+export default {
+  Nav,
+  HambuguerMenu,
+  Menu,
+  MenuItem,
+  MenuItemDescription,
+  SearchItem,
+};

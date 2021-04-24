@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const Icon = styled.div`
+const InputIcon = styled.div`
   display: none;
   position: absolute;
   top: 16px;
@@ -40,7 +40,7 @@ const Input = styled.input`
     border: 2px solid ${Theme.colors.primary};
   }
 
-  &:focus + ${Icon} {
+  &:focus + ${InputIcon} {
     color: ${Theme.colors.primary};
   }
 
@@ -49,4 +49,4 @@ const Input = styled.input`
   }
 `;
 
-export default { Wrapper, Icon, Input };
+export default { Wrapper, InputIcon, Input };
