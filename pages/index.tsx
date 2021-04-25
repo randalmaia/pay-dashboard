@@ -5,7 +5,7 @@ import Dashboard from "../components/Dashboard";
 const Home = () => (
   <div>
     <Head>
-      <title>Create Next App</title>
+      <title>Pay - The awesome dashboard!</title>
       <link rel="icon" href="/favicon.ico" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link

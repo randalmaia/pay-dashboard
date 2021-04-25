@@ -7,6 +7,9 @@ const Dashboard = styled.div`
   padding: 62px;
   display: flex;
   background-color: #fff;
+  display: flex;
 `;
 
-export default { Dashboard };
+const CreditCardContainer = styled.div``;
+
+export default { Dashboard, CreditCardContainer };
