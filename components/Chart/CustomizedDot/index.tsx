@@ -1,6 +1,6 @@
 import { CustomDotProps } from "../types";
 
-const CustomizedDot = ({ cx, cy, payload }: CustomDotProps) => {
+const CustomizedDot = ({ cx = 0, cy = 0, payload = {} }: CustomDotProps) => {
   if (payload.view)
     return (
       <g>
