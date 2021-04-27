@@ -4,10 +4,10 @@ import Header from "../Header";
 import { LayoutProps } from "./types";
 import Styles from "./styles";
 
-const Layout = ({ children }: LayoutProps) => (
+const Layout = ({ children, user }: LayoutProps) => (
   <Styles.Layout>
     <GlobalStyle></GlobalStyle>
-    <Header></Header>
+    <Header user={user}></Header>
     <Navbar></Navbar>
     <Styles.Main>{children}</Styles.Main>
   </Styles.Layout>

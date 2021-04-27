@@ -1,11 +1,10 @@
+import { FC } from "react";
 import Styles from "./styles";
+import { AvatarProps } from "./types";
 
-const Avatar = () => (
+const Avatar: FC<AvatarProps> = ({ name, image }: AvatarProps) => (
   <Styles.Avatar>
-    <img
-      alt="profile pic"
-      src="https://overless.com/upload/photos/2019/04/QGMmQoYOdIPQDiEGohAe_29_faef49059f2fa04c49e448d81911d2fe_avatar.jpg"
-    />
+    <img alt={name} src={image} />
   </Styles.Avatar>
 );
 
