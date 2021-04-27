@@ -9,6 +9,7 @@ const Dashboard = gql`
     card(id: "K1k5wDGcHF") {
       cardHolder
       cardNumber
+      cardCSV
     }
     payments {
       edges {

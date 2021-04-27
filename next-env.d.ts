@@ -9,6 +9,7 @@ interface User {
 interface Card {
   cardNumber: string;
   cardHolder: string;
+  cardCSV: number;
 }
 
 interface Payment {

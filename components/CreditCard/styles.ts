@@ -4,6 +4,7 @@ const Front = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 3;
   border-radius: 32px;
   width: 325px;
   height: 205px;
@@ -129,7 +130,7 @@ const CardBrandText = styled.div`
   top: 166px;
   left: 236px;
   color: #fff;
-  z-index: 2;
+  z-index: 3;
 `;
 
 const BlackBar = styled.div`

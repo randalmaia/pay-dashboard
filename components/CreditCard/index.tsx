@@ -1,7 +1,9 @@
 import Styles from "./styles";
 import Image from "next/image";
+import { CreditCardProps } from "./types";
+import { FC } from "react";
 
-const CreditCard = () => (
+const CreditCard: FC<CreditCardProps> = ({ card }: CreditCardProps) => (
   <Styles.CreditCard>
     <Styles.Front>
       <Styles.Chip>
@@ -9,13 +11,13 @@ const CreditCard = () => (
       </Styles.Chip>
 
       <Styles.Sign>
-        <Image src="/sign.png" alt="Chip" width="28px" height="35px"></Image>
+        <Image src="/sign.png" alt="Sign" width="28px" height="35px"></Image>
       </Styles.Sign>
 
-      <Styles.CardNumber>4543 3434 3223 3213</Styles.CardNumber>
+      <Styles.CardNumber>{card.cardNumber}</Styles.CardNumber>
 
       <Styles.CardHolderLabel>Card Holder</Styles.CardHolderLabel>
-      <Styles.CardHolder>Ghulam Rasool</Styles.CardHolder>
+      <Styles.CardHolder>{card.cardHolder}</Styles.CardHolder>
 
       <Styles.CardBrand>
         <Image
@@ -30,7 +32,7 @@ const CreditCard = () => (
     <Styles.Back>
       <Styles.BlackBar>a</Styles.BlackBar>
       <Styles.SecretBar>
-        <span>434</span>
+        <span>{card.cardCSV}</span>
       </Styles.SecretBar>
     </Styles.Back>
   </Styles.CreditCard>
