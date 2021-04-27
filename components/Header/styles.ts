@@ -8,13 +8,13 @@ const Header = styled.header`
 
   @media (min-width: 480px) {
     padding: 0 0;
-    grid-template-columns: 124px 100px 45px 75px 45px;
+    grid-template-columns: 124px 100px 45px 75px 50px;
   }
 
   @media (min-width: 801px) {
     width: 100%;
     padding: 30px 0;
-    grid-template-columns: 124px auto 45px 75px 45px;
+    grid-template-columns: 124px auto 45px 75px 50px;
   }
 `;
 

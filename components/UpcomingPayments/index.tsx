@@ -6,7 +6,7 @@ import Styles from "./styles";
 const UpcomingPayments = () => (
   <Styles.UpcomingPayments>
     <Heading level="h2" size="body1">
-      Upcoming Payments
+      Upcoming payments
     </Heading>
     <Styles.UpcomingPaymentsList>
       <Styles.Payment>

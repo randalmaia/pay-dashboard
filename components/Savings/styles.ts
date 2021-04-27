@@ -8,7 +8,6 @@ const Savings = styled.div`
   font-weight: 600;
   height: 760px;
   width: 435px;
-  margin-right: 25px;
 `;
 
 const Saved = styled.div`

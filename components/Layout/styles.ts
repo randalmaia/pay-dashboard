@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Layout = styled.div`
   display: grid;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 
   @media (min-width: 480px) {
     grid-template-columns: 70px 70px auto auto;
@@ -33,6 +33,7 @@ const Layout = styled.div`
 const Main = styled.main`
   grid-area: content;
   min-height: 400px;
+  max-width: 1290px;
 `;
 
 // @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
