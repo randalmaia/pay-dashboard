@@ -1,5 +1,7 @@
 import Heading from "../Heading";
 import CreditCard from "../CreditCard";
+import UpcomingPayments from "../UpcomingPayments";
+import Savings from "../Savings";
 import Styles from "./styles";
 
 const Dashboard = () => (
@@ -10,6 +12,8 @@ const Dashboard = () => (
       </Heading>
       <CreditCard></CreditCard>
     </Styles.CreditCardContainer>
+    <UpcomingPayments />
+    <Savings></Savings>
   </Styles.Dashboard>
 );
 

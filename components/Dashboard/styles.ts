@@ -10,6 +10,11 @@ const Dashboard = styled.div`
   display: flex;
 `;
 
-const CreditCardContainer = styled.div``;
+const CreditCardContainer = styled.div`
+  margin-right: 35px;
+`;
 
-export default { Dashboard, CreditCardContainer };
+export default {
+  Dashboard,
+  CreditCardContainer,
+};
