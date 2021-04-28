@@ -20,6 +20,7 @@ const Home = ({ data }: HomeProps) => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
           rel="stylesheet"
         />
+        <meta name="format-detection" content="telephone=no" />
       </Head>
       <Layout user={data.user}>
         <Dashboard card={data.card} payments={data.payments} />
