@@ -7,7 +7,11 @@ import Styles from "./styles";
 import { DashboardProps } from "./types";
 import { FC } from "react";
 
-const Dashboard: FC<DashboardProps> = ({ card, payments }: DashboardProps) => (
+const Dashboard: FC<DashboardProps> = ({
+  card,
+  payments,
+  transactions,
+}: DashboardProps) => (
   <Styles.Dashboard>
     <Styles.Section>
       <Styles.CreditCardContainer>
@@ -17,7 +21,7 @@ const Dashboard: FC<DashboardProps> = ({ card, payments }: DashboardProps) => (
         <CreditCard card={card}></CreditCard>
       </Styles.CreditCardContainer>
       <UpcomingPayments payments={payments} />
-      <Transactions />
+      <Transactions transactions={transactions} />
     </Styles.Section>
     <Savings></Savings>
   </Styles.Dashboard>

@@ -7,7 +7,7 @@ const Nav = styled.nav`
 
 const HambuguerMenu = styled.div`
   position: relative;
-  z-index: 3;
+  z-index: 201;
   @media (min-width: 801px) {
     display: none;
   }
@@ -43,7 +43,7 @@ const Menu = styled.ul<NavbarProps>`
     open &&
     `
         left:0;
-        z-index: 2;
+        z-index: 200;
         transform: translateX(0%);
         
   `}

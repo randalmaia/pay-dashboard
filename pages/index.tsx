@@ -23,7 +23,11 @@ const Home = ({ data }: HomeProps) => {
         <meta name="format-detection" content="telephone=no" />
       </Head>
       <Layout user={data.user}>
-        <Dashboard card={data.card} payments={data.payments} />
+        <Dashboard
+          card={data.card}
+          transactions={data.transactions}
+          payments={data.payments}
+        />
       </Layout>
     </div>
   );

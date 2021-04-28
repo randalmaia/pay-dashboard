@@ -30,13 +30,15 @@ interface Transaction {
   description: string;
   value: number;
   type: string;
-  date: Date;
+  date: string;
 }
 
 interface Transactions {
-  edges: {
-    nodes: Transaction;
-  }[];
+  edges: Array<TransactionEdge>;
+}
+
+interface TransactionEdge {
+  node: Transaction;
 }
 
 interface Saving {
