@@ -15,7 +15,7 @@ const UpcomingPayments: FC<UpcomingPaymentsProps> = ({
 
   const renderPayments = (PaymentsEdges: Array<PaymentEdge>) => {
     return PaymentsEdges.map((payment: PaymentEdge) => (
-      <Styles.Payment>
+      <Styles.Payment key={payment.node.type}>
         <Styles.PaymentIcon>{iconMap[payment.node.type]}</Styles.PaymentIcon>
 
         <span>{payment.node.type}</span>
