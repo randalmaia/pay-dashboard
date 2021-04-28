@@ -42,14 +42,8 @@ interface TransactionEdge {
 }
 
 interface Saving {
-  saved: number;
-  date: Date;
-}
-
-interface Savings {
-  edges: {
-    nodes: Saving;
-  }[];
+  saved: string;
+  percentSaved: number;
 }
 
 interface DashboardData {
@@ -57,5 +51,5 @@ interface DashboardData {
   card: Card;
   payments: Payments;
   transactions: Transactions;
-  savings: Savings;
+  saving: Saving;
 }

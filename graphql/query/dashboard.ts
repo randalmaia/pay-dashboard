@@ -30,13 +30,9 @@ const Dashboard = gql`
         }
       }
     }
-    savings {
-      edges {
-        node {
-          saved
-          date
-        }
-      }
+    saving(id: "CPRuyBZcU3") {
+      saved
+      percentSaved
     }
   }
 `;

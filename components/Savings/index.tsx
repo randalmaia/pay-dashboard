@@ -1,14 +1,16 @@
+import { FC } from "react";
 import Chart from "../Chart";
 import Plan from "../Plan";
 import Styles from "./styles";
+import { SavingProps } from "./types";
 
-const Savings = () => (
+const Savings: FC<SavingProps> = ({ saving }: SavingProps) => (
   <Styles.Savings>
     <Styles.Saved>
-      Saved This Month <span>$25,999.00</span>
+      Saved This Month <span>${saving.saved}</span>
     </Styles.Saved>
     <Chart />
-    <Plan></Plan>
+    <Plan percentSaved={saving.percentSaved}></Plan>
   </Styles.Savings>
 );
 

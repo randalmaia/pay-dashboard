@@ -31,6 +31,7 @@ const Home = ({ data }: HomeProps) => {
           card={data.card}
           transactions={data.transactions}
           payments={data.payments}
+          saving={data.saving}
         />
       </Layout>
     </div>

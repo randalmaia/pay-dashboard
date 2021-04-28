@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 const Header = styled.header`
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
   grid-area: header;
-  align-items: center; */
+  align-items: center;
   width: 100%;
 
   @media (min-width: 480px) {
     padding: 0 0;
-    height: 100px;
   }
 
   @media (min-width: 801px) {

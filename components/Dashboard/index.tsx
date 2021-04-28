@@ -11,6 +11,7 @@ const Dashboard: FC<DashboardProps> = ({
   card,
   payments,
   transactions,
+  saving,
 }: DashboardProps) => (
   <Styles.Dashboard>
     <Styles.Section>
@@ -23,7 +24,7 @@ const Dashboard: FC<DashboardProps> = ({
       <UpcomingPayments payments={payments} />
       <Transactions transactions={transactions} />
     </Styles.Section>
-    <Savings></Savings>
+    <Savings saving={saving}></Savings>
   </Styles.Dashboard>
 );
 
