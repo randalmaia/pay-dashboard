@@ -20,7 +20,6 @@ const LanguageSelector = () => (
         EN
       </MenuItem>
     </Menu>
-    <FaChevronDown size={13} />
   </Styles.LanguageSelector>
 );
 

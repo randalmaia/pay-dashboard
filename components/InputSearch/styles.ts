@@ -3,6 +3,24 @@ import Theme from "../../styles/Theme";
 
 const Wrapper = styled.div`
   position: relative;
+
+  @media (min-width: 801px) {
+    width: 400px;
+    margin-left: 45px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 700px;
+    margin-left: 45px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: 1380px) {
+    width: 1000px;
+    margin-left: 45px;
+    margin-right: 50px;
+  }
 `;
 
 const InputIcon = styled.div`
