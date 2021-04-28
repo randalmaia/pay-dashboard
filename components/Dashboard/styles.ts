@@ -4,21 +4,54 @@ const Dashboard = styled.div`
   box-sizing: border-box;
   border-radius: 64px;
   min-height: 700px;
-  padding: 50px 50px 25px 50px;
+  max-width: 465px;
+  padding: 50px;
   display: flex;
+  flex-direction: column;
   background-color: #fff;
   justify-content: flex-start;
+
+  @media (min-width: 1025px) {
+    max-width: 965px;
+    flex-direction: row;
+  }
+
+  @media (min-width: 1380px) {
+    flex-direction: row;
+    padding: 50px 50px 25px 50px;
+    max-width: initial;
+  }
 `;
 
 const Section = styled.div`
-  width: 762px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  width: 375px;
+
+  @media (min-width: 801px) {
+    width: 462px;
+    margin-right: 35px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 392px;
+    margin-right: 35px;
+  }
+
+  @media (min-width: 1380px) {
+    width: 762px;
+    margin-right: 0;
+  }
 `;
 
 const CreditCardContainer = styled.div`
-  margin-right: 35px;
+  margin-bottom: 50px;
+
+  @media (min-width: 1380px) {
+    margin-right: 35px;
+    margin-bottom: 0;
+  }
 `;
 
 export default {

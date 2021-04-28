@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 const Transactions = styled.div`
   min-height: 370px;
-  width: 730px;
-  margin: 60px 0 0 0;
+  width: 400px;
+  margin: 60px 0 50px 0;
+
+  @media (min-width: 1025px) {
+    width: 730px;
+    margin: 60px 0 0 0;
+  }
 `;
 
 const TransactionsList = styled.ul`

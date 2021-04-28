@@ -7,7 +7,11 @@ const Savings = styled.div`
   font-size: 18px;
   font-weight: 600;
   height: 760px;
-  width: 435px;
+  width: 380px;
+
+  @media (min-width: 1025px) {
+    width: 445px;
+  }
 `;
 
 const Saved = styled.div`

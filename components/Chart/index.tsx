@@ -6,6 +6,7 @@ import {
   CartesianGrid,
   Area,
   Tooltip,
+  ResponsiveContainer,
 } from "recharts";
 import ChartSelector from "../ChartSelector";
 import CustomizedLabel from "./CustomizedLabel";
@@ -121,43 +122,43 @@ const Chart = () => {
         />
       </Styles.ChartOptions>
       <Styles.ChartContainer>
-        <AreaChart
-          width={450}
-          height={300}
-          data={data.savings}
-          margin={{ top: 20, right: 8, left: 8, bottom: 20 }}
-        >
-          <defs>
-            <linearGradient id="amount" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#15121d" stopOpacity={0.3} />
-              <stop offset="75%" stopColor="#15121d" stopOpacity={0} />
-            </linearGradient>
-          </defs>
+        <ResponsiveContainer width="100%" height={300}>
+          <AreaChart
+            data={data.savings}
+            margin={{ top: 20, right: 8, left: 8, bottom: 20 }}
+          >
+            <defs>
+              <linearGradient id="amount" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#15121d" stopOpacity={0.3} />
+                <stop offset="75%" stopColor="#15121d" stopOpacity={0} />
+              </linearGradient>
+            </defs>
 
-          <Area
-            isAnimationActive={true}
-            animationDuration={300}
-            type="natural"
-            dataKey="amount"
-            stroke="#15121d"
-            strokeWidth={7}
-            fillOpacity={1}
-            fill="url(#amount)"
-            dot={<CustomizedLabel />}
-            activeDot={<CustomizedDot />}
-          />
+            <Area
+              isAnimationActive={true}
+              animationDuration={300}
+              type="natural"
+              dataKey="amount"
+              stroke="#15121d"
+              strokeWidth={7}
+              fillOpacity={1}
+              fill="url(#amount)"
+              dot={<CustomizedLabel />}
+              activeDot={<CustomizedDot />}
+            />
 
-          <Tooltip
-            viewBox={{ x: 0, y: 0, width: 0, height: 0 }}
-            wrapperStyle={{ display: "none" }}
-            position={{ x: 0, y: 0 }}
-            cursor={false}
-          ></Tooltip>
+            <Tooltip
+              viewBox={{ x: 0, y: 0, width: 0, height: 0 }}
+              wrapperStyle={{ display: "none" }}
+              position={{ x: 0, y: 0 }}
+              cursor={false}
+            ></Tooltip>
 
-          <CartesianGrid horizontal={false} vertical={false} />
-          <XAxis hide={true}></XAxis>
-          <YAxis hide={true}></YAxis>
-        </AreaChart>
+            <CartesianGrid horizontal={false} vertical={false} />
+            <XAxis hide={true}></XAxis>
+            <YAxis hide={true}></YAxis>
+          </AreaChart>
+        </ResponsiveContainer>
       </Styles.ChartContainer>
     </Styles.ChartWrapper>
   );
