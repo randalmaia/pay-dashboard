@@ -11,7 +11,7 @@ const Dashboard = gql`
       cardNumber
       cardCSV
     }
-    payments {
+    payments(first: 2) {
       edges {
         node {
           description

@@ -22,7 +22,7 @@ const Home = ({ data }: HomeProps) => {
         />
       </Head>
       <Layout user={data.user}>
-        <Dashboard card={data.card} />
+        <Dashboard card={data.card} payments={data.payments} />
       </Layout>
     </div>
   );

@@ -4,10 +4,10 @@ import UpcomingPayments from "../UpcomingPayments";
 import Transactions from "../Transactions";
 import Savings from "../Savings";
 import Styles from "./styles";
-import DashboardProps from "./types";
+import { DashboardProps } from "./types";
 import { FC } from "react";
 
-const Dashboard: FC<DashboardProps> = ({ card }: DashboardProps) => (
+const Dashboard: FC<DashboardProps> = ({ card, payments }: DashboardProps) => (
   <Styles.Dashboard>
     <Styles.Section>
       <Styles.CreditCardContainer>
@@ -16,7 +16,7 @@ const Dashboard: FC<DashboardProps> = ({ card }: DashboardProps) => (
         </Heading>
         <CreditCard card={card}></CreditCard>
       </Styles.CreditCardContainer>
-      <UpcomingPayments />
+      <UpcomingPayments payments={payments} />
       <Transactions />
     </Styles.Section>
     <Savings></Savings>

@@ -19,9 +19,11 @@ interface Payment {
 }
 
 interface Payments {
-  PaymentsEdges: {
-    PaymentsNodes: Payment;
-  }[];
+  edges: Array<PaymentEdge>;
+}
+
+interface PaymentEdge {
+  node: Payment;
 }
 
 interface Transaction {
@@ -32,8 +34,8 @@ interface Transaction {
 }
 
 interface Transactions {
-  TransactionsEdges: {
-    TransactionsNodes: Transaction;
+  edges: {
+    nodes: Transaction;
   }[];
 }
 
@@ -43,8 +45,8 @@ interface Saving {
 }
 
 interface Savings {
-  SavingsEdges: {
-    SavingsNodes: Saving;
+  edges: {
+    nodes: Saving;
   }[];
 }
 
