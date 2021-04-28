@@ -1,5 +1,5 @@
 import Styles from "./styles";
-import { BsGift, BsThreeDotsVertical } from "react-icons/bs";
+import { BsGift } from "react-icons/bs";
 import TransactionMenu from "../Menu";
 
 const Item = () => (

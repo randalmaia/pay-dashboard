@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Theme from "../../../styles/Theme";
 
 const TransactionsItem = styled.li`
   display: flex;

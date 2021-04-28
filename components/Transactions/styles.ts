@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Theme from "../../styles/Theme";
 
 const Transactions = styled.div`
   min-height: 370px;
