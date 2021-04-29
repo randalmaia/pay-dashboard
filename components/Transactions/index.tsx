@@ -3,7 +3,7 @@ import Heading from "../Heading";
 import TransactionItem from "./Item";
 import Styles from "./styles";
 import { BsArrowDown } from "react-icons/bs";
-import { TransactionsProps } from "./types";
+import { SortByMapInterface, TransactionsProps } from "./types";
 import { parseISO } from "date-fns";
 import FlipMove from "react-flip-move";
 
@@ -43,7 +43,7 @@ const Transactions: FC<TransactionsProps> = ({
     if (sortBy === "") return;
 
     let items = sortedTransactions;
-    const sortByMap: { [key: string]: any } = {
+    const sortByMap: SortByMapInterface = {
       value: { function: sortByValues, label: "01" },
       type: { function: sortByTypes, label: "AZ" },
       date: { function: sortByDates, label: "01" },
