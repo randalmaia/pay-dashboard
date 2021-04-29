@@ -4,4 +4,5 @@ export type TransactionsProps = {
 
 export type TransactionItemProps = {
   transaction: { node: Transaction };
+  ref: React.MutableRefObject<HTMLLIElement>;
 };

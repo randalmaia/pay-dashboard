@@ -26,7 +26,40 @@ const TransactionsList = styled.ul`
   }
 `;
 
+const TransactionHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const OrderBy = styled.div`
+  display: flex;
+
+  select {
+    border-radius: 10px;
+    font-size: 12px;
+    color: #9d9b9d;
+    border: 1px #e0e5ee solid;
+    outline: none;
+    padding: 5px 25px 5px 15px;
+    width: 144px;
+    margin-right: 14px;
+  }
+`;
+
+const OrderByIcon = styled.div`
+  width: 10px;
+  height: 30px;
+  font-size: 11px;
+  color: #9d9b9d;
+  margin-right: 10px;
+  margin-left: -5px;
+  overflow-wrap: break-word;
+`;
+
 export default {
   Transactions,
   TransactionsList,
+  TransactionHeader,
+  OrderBy,
+  OrderByIcon,
 };

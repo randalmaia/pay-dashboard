@@ -10,7 +10,7 @@ const UpcomingPayments: FC<UpcomingPaymentsProps> = ({
 }: UpcomingPaymentsProps) => {
   const iconMap: { [key: string]: JSX.Element } = {
     Paypal: <RiPaypalLine size={32} />,
-    Salary: <BsBriefcase size={24} />,
+    Salary: <BsBriefcase size={32} />,
   };
 
   const renderPayments = (PaymentsEdges: Array<PaymentEdge>) => {

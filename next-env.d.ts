@@ -27,6 +27,7 @@ interface PaymentEdge {
 }
 
 interface Transaction {
+  id: string;
   description: string;
   value: number;
   type: string;

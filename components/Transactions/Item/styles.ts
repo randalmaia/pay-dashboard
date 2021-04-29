@@ -4,7 +4,7 @@ const TransactionsItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  background-color: #fff;
   width: 100%;
   padding: 24px 0;
 `;

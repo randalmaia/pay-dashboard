@@ -23,6 +23,7 @@ const Dashboard = gql`
     transactions {
       edges {
         node {
+          id
           description
           value
           type
