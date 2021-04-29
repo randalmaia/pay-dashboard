@@ -166,6 +166,14 @@ const SecretBar = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  span {
+    display: block;
+    background-color: #fff;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 4px;
+  }
 `;
 
 export default {

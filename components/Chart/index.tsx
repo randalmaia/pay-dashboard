@@ -136,7 +136,7 @@ const Chart = () => {
 
             <Area
               isAnimationActive={true}
-              animationDuration={300}
+              animationDuration={500}
               type="natural"
               dataKey="amount"
               stroke="#15121d"

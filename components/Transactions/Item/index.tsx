@@ -6,10 +6,10 @@ import { MdLocalLaundryService } from "react-icons/md";
 import { IoCarOutline } from "react-icons/io5";
 import TransactionMenu from "../Menu";
 import { TransactionItemProps } from "../types";
-import { FC, forwardRef, Ref } from "react";
+import { forwardRef, Ref } from "react";
 import { format, parseISO } from "date-fns";
 
-const Item: FC<any> = forwardRef(
+const Item = forwardRef(
   ({ transaction }: TransactionItemProps, ref: Ref<HTMLLIElement>) => {
     const iconMap: { [key: string]: JSX.Element } = {
       Shopping: <BsGift size={30} />,

@@ -1,34 +1,70 @@
+# Pay Dashboard
+
+<center>
+
+<p>Server side rendered dashboard with Graphql Data</p>
+<img alt="Imagem do dashboard" width="600" src="https://i.imgur.com/HWSdOLU.png">
+</center>
+
+--- 
+
+## Cool features
+
+<details>
+<summary><b>Click to show (big images)</b></summary>
+
+###  3D css only fliping card
+
+<img alt="Fliping Card" src="https://i.imgur.com/K1vts7W.gif" />
+
+###  Animated chart
+
+<img alt="Animated Chart" src="https://i.imgur.com/fxrPa9t.gif" />
+
+###  CSS Vectors
+
+<img alt="Vector" src="https://i.imgur.com/TUKfUY6.png" />
+
+### Animated sort by
+
+<img alt="Sort" src="https://i.imgur.com/0XvTXv1.gif" />
+
+
+
+</details>
+
+## Stack
+- NextJs
+- Typescript
+- Graphql database (back4app integration)
+- Tests with Jest and React Testing Lib
+  
+## Performance
+
+[Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br&url=https%3A%2F%2Fpay-dashboard-randalmaia.vercel.app%2F&tab=desktop)
+
+<img alt="Page Speed Insights" width="500" src="https://i.imgur.com/ADIwz1n.png" />
+
+
+## Dev
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+### Usage
 
-First, run the development server:
+Run the development server:
 
 ```bash
-npm run dev
-# or
+yarn
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tests
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Run tests with:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+yarn run tests
+```
