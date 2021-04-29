@@ -22,12 +22,16 @@ const Payment = styled.div`
   font-size: 18px;
   font-weight: 600;
   height: 205px;
-  width: 170px;
+  width: 150px;
   margin-right: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 480px) {
+    width: 170px;
+  }
 
   span {
     display: block;

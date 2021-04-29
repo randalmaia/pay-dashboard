@@ -3,13 +3,14 @@ import styled from "styled-components";
 const Layout = styled.div`
   display: grid;
   margin: 0 auto 50px;
+  width: 360px;
+  grid-template-areas:
+    "sidebar header  header header"
+    "content content content content";
+  grid-template-columns: 70px 70px auto auto;
+  grid-template-rows: 100px auto;
 
   @media (min-width: 480px) {
-    grid-template-columns: 70px 70px auto auto;
-    grid-template-rows: 100px auto;
-    grid-template-areas:
-      "sidebar header  header header"
-      "content content content content";
     width: 465px;
   }
 

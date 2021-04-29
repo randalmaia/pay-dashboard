@@ -43,6 +43,7 @@ const OrderBy = styled.div`
     padding: 5px 25px 5px 15px;
     width: 144px;
     margin-right: 14px;
+    appearance: none;
   }
 `;
 

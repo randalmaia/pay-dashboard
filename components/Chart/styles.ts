@@ -8,7 +8,11 @@ const ChartWrapper = styled.div`
 const ChartContainer = styled.div`
   position: absolute;
   left: -8px;
-  width: 390px;
+  width: 340px;
+
+  @media (min-width: 480px) {
+    width: 390px;
+  }
 
   @media (min-width: 801px) {
     width: 395px;
