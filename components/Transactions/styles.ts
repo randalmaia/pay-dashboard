@@ -57,10 +57,21 @@ const OrderByIcon = styled.div`
   overflow-wrap: break-word;
 `;
 
+const SelectWrapper = styled.div`
+  position: relative;
+
+  svg {
+    position: absolute;
+    left: 80%;
+    top: 9px;
+  }
+`;
+
 export default {
   Transactions,
   TransactionsList,
   TransactionHeader,
   OrderBy,
   OrderByIcon,
+  SelectWrapper,
 };

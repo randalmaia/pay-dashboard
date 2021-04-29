@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import Heading from "../Heading";
 import TransactionItem from "./Item";
 import Styles from "./styles";
-import { BsArrowDown } from "react-icons/bs";
+import { BsArrowDown, BsChevronDown } from "react-icons/bs";
 import { SortByMapInterface, TransactionsProps } from "./types";
 import { parseISO } from "date-fns";
 import FlipMove from "react-flip-move";
@@ -16,8 +16,8 @@ const Transactions: FC<TransactionsProps> = ({
     Array<TransactionEdge>
   >(transactions.edges);
 
-  const sortByDates = (items: Array<TransactionEdge>) =>
-    items.sort((transcationA, transcationB) => {
+  const sortByDates = (items: Array<TransactionEdge>) => {
+    return items.sort((transcationA, transcationB) => {
       const dateTimeA = parseISO(transcationA.node.date).getTime();
       const dateTimeB = parseISO(transcationB.node.date).getTime();
 
@@ -25,9 +25,10 @@ const Transactions: FC<TransactionsProps> = ({
       if (dateTimeA > dateTimeB) return 1;
       return 0;
     });
+  };
 
-  const sortByTypes = (items: Array<TransactionEdge>) =>
-    items.sort((transcationA, transcationB) => {
+  const sortByTypes = (items: Array<TransactionEdge>) => {
+    return items.sort((transcationA, transcationB) => {
       const typeA = transcationA.node.type.toLowerCase();
       const typeB = transcationB.node.type.toLowerCase();
 
@@ -35,6 +36,7 @@ const Transactions: FC<TransactionsProps> = ({
       if (typeA > typeB) return 1;
       return 0;
     });
+  };
 
   const sortByValues = (items: Array<TransactionEdge>) =>
     items.sort((a, b) => a.node.value - b.node.value);
@@ -76,20 +78,23 @@ const Transactions: FC<TransactionsProps> = ({
         </Heading>
 
         <Styles.OrderBy>
-          <select
-            value={sortBy}
-            onChange={(e) => {
-              setSortBy(e.target.value);
-            }}
-            data-testid="select"
-          >
-            <option value="">Sort by</option>
-            <option data-testid="option-date" value="date">
-              Date
-            </option>
-            <option value="type">Type</option>
-            <option value="value">Value</option>
-          </select>
+          <Styles.SelectWrapper>
+            <select
+              value={sortBy}
+              onChange={(e) => {
+                setSortBy(e.target.value);
+              }}
+              data-testid="select"
+            >
+              <option value="">Sort by</option>
+              <option data-testid="option-date" value="date">
+                Date
+              </option>
+              <option value="type">Type</option>
+              <option value="value">Value</option>
+            </select>
+            <BsChevronDown size={10} />
+          </Styles.SelectWrapper>
           <BsArrowDown size={30}></BsArrowDown>
           <Styles.OrderByIcon>{sortByLabel}</Styles.OrderByIcon>
         </Styles.OrderBy>
